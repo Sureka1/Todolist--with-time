@@ -1,0 +1,80 @@
+body{
+    background-image:url("todolist1.webp");
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    display:flex;
+    justify-content:center;
+    align-self:center;
+    top: 500px;;
+  }
+  
+  .buttonField{
+      height: 50px;
+      width:70px;
+      vertical-align: middle;
+      font-size: 30px;
+      color: rgb(17, 17, 16);
+      background-color: gold;
+      box-shadow: 15px;
+      font-style: oblique;
+  }
+  .inputField{
+      width: 300px;
+      height: 46px;
+      border-width: 0;
+      border: 1px solid black;
+      outline: none;
+      font-size: 25px;
+      vertical-align: middle;
+      
+  }
+  #add-item{
+      height: 25px;
+      width: 25%;
+      background-color: red;
+      color: white;
+      border-style: none;
+  }
+  
+  ul {
+      list-style: none;
+      list-style-position: outside;
+      margin: 0;
+      padding: 25px 0;
+      font-size: 30px;
+  }
+  li{
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 10px;
+  }
+  ul li.checked {
+    text-decoration: line-through;
+  }
+  
+  .delete-item{
+      background-color: yellow;
+      border-radius: 5px;
+      border:none;
+      color: black;
+      width: 50px;
+      text-align: center;
+  }
+  
+  .delete-item:hover{
+      background-color: orange;
+      width: 55px;
+  }
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
