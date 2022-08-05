@@ -10,16 +10,23 @@
 <body>
 <label>
   <h1>Todo List</h1>
+  <div>
     <div id="myDIV" class="header">
-    <input type="text" id="myInput" placeholder="Title..." class="inputField">
+    <input type="text" id="myInput" placeholder="Name..." class="inputField">
     <button onclick="newElement()" class="buttonField">Add</button>
-    </div>
+    </div><br>
+    <div>
+      <input type="date" id="dateInput2" class="inputField">
+      <button onclick="daysDifference()" class="buttonsField">Submit</button>
+      <h3 style="color:32A80F" id="result" align="center"></h3>
+  </div>
+  </div>
     <ul id="myUL">
-    <li>Apps preparation</li>
+    <!--<li>Apps preparation</li>
     <li class="checked">
     <span action="/">Book Time</span>
     </li>
-    <!-- <li>Meet HOD</li>
+     <li>Meet HOD</li>
     <li>Buy Mouse</li>
     <li>Read news</li>
     <li>Organize meet</li>-->

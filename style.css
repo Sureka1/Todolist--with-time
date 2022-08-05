@@ -11,13 +11,24 @@ body{
   
   .buttonField{
       height: 50px;
-      width:70px;
+      width:120px;
       vertical-align: middle;
       font-size: 30px;
       color: rgb(17, 17, 16);
       background-color: gold;
       box-shadow: 15px;
       font-style: oblique;
+  }
+  .buttonsField{
+    height: 50px;
+    width:120px;
+    vertical-align: middle;
+    font-size: 30px;
+    color: rgb(17, 17, 16);
+    background-color: gold;
+    box-shadow: 15px;
+    font-style: oblique;
+
   }
   .inputField{
       width: 300px;
