@@ -1,38 +1,67 @@
 function daysDifference(){  
- //define two variables and fetch the input from HTML form  
-  var date1;  
-  var dateI2 = document.getElementById("dateInput2").value;  
+  //define two variables and fetch the input from HTML form  
+   var date1;  
+   var dateI2 = document.getElementById("dateInput2").value;  
+  //define two date object variables to store the date values  
+   var date1 = new Date();  
+   var date2 = new Date(dateI2); 
+  /*const days = (date1, date2) =>{
+     var time_difference = date1.getTime() - date2.getTime();
+     var result = Math.ceil(time_difference / (1000 * 3600 * 24));
+     alert(days(date1,date2)+"days between both dates");
+     }
+   }*/ 
+ //calculate time difference  
+  var time_difference = date1.getTime() - date2.setDate();  
+ //calculate days difference by dividing total milliseconds in a day  
+   var result = Math.ceil(time_difference / (1000 * 60 * 60 * 24));  
+   return document.getElementById("result").innerHTML =    
+   result + " days between both dates."; 
+ }
+ 
+
+
+
+
+
+
+
+/*function daysDifference(){ 
+var dateI2 = document.getElementById("dateInput2").value;
+var d = new Date();
+document.write('Today is:' + d.toLocaleDateString());
+result=d.tolocalDateString()-dateI2; 
+console.log(result+'days ago');
+}*/ 
+ 
+
+//define two variables and fetch the input from HTML form  
+ /* var dateI1=  document.getElementById("dateInput2").value; 
+  var date2;  
  //define two date object variables to store the date values  
-  var date1 = new Date();  
-  var date2 = new Date(dateI2); 
- /*const days = (date1, date2) =>{
-    var time_difference = date1.getTime() - date2.getTime();
-    var result = Math.ceil(time_difference / (1000 * 3600 * 24));
-    alert(days(date1,date2)+"days between both dates");
-    }
-  }*/ 
+  var date1 = new Date(dateI1);  
+  var date2 = new Date(); 
+ const days = (date1, date2) =>{
+ var time_difference = date1.getTime() - date2.getTime();
+ var result = Math.ceil(time_difference / (1000 * 3600 * 24));
+ alert(days(date1,date2)+"days between both dates");
+  }
+}*/
 //calculate time difference  
- var time_difference = date1.getTime() - date2.setDate();  
+ /*var time_difference = date1.getTime() - date2.setDate();  
 //calculate days difference by dividing total milliseconds in a day  
   var result = Math.ceil(time_difference / (1000 * 60 * 60 * 24));  
   return document.getElementById("result").innerHTML =    
   result + " days between both dates."; 
+}*/
+/*  let date_1 = new Date();
+let date_2 = document.getElementsByClassName("buttonsField"); //new Date('6/25/2022');
+const days = (date_1, date_2) =>{
+let difference = date_1.getTime() - date_2.getTime();
+let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
+return TotalDays;
 }
-
-   
-
-
-           /*  let date_1 = new Date();
-             let date_2 = document.getElementsByClassName("buttonsField"); //new Date('6/25/2022');
-             const days = (date_1, date_2) =>{
-                 let difference = date_1.getTime() - date_2.getTime();
-                 let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
-                 return TotalDays;
-             }
-             alert(days(date_1, date_2) +"days before you have read books");*/
-
-
-
+alert(days(date_1, date_2) +"days before you have read books");*/
 /*let date_1 = new Date();
 let date_2 = document.getElementsByClassName("buttonsField"); //new Date('6/25/2022');
 const days = (date_1, date_2) =>{
@@ -41,6 +70,8 @@ const days = (date_1, date_2) =>{
     return TotalDays;
 }
 alert(days(date_1, date_2) +"days before you have read books");*/
+
+
 
  // Click on a close button to hide the current list item
 var close = document.getElementsByClassName("close");
